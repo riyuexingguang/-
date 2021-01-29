@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let person=()=>{
+        //     console.log(11);
+        // }
+        // console.log(person());
+        // let
+        // function f(...values) {
+        //     console.log(values.length);
+        // }
+        // f(1, 2); //2
+        // f(1, 2, 3, 4); //4
+        // let name=name=>{
+        //     console.log(name);
+        // }
+        // name(10);
+     
+        // let a=[1,2,35,85];
+        // let b=a[Symbol.iterator]()
+        // console.log(b);
+        // class father{
+        //     constructor(name,age,hobby){
+        //         this.name=name;
+        //         this.age=age;
+        //         this.hobby=hobby;
+        //     }
+        //     say(value){
+        //         return this.name+this.age+this.hobby+value
+        //     }
+        // }
+        // class son extends father{
+        //     constructor(name,age,hobby,like){
+        //         super(name,age,hobby)
+        //         this.like=like
+        //     }
+        // }
+        // let a=new son('wo','18','xi','huan');
+        // console.log(a.say('ni'));
+        // console.log(a.like);
+           class father{
+               constructor(name,age,sex,hobby){
+                this.age=age;
+                this.name=name;
+                this.sex=sex;
+                this.hobby=hobby;
+               }
+               say(value){
+                return this.name+this.age+this.sex+this.hobby+value
+               }
+           }
+           class son extends father{
+               constructor(name,age,sex,hobby,ss){
+                   super(name,age,sex,hobby)
+                this.ss=ss
+               }
+           }
+           var a=new son('wo','xi','haun','')
+           console.log(a.say('you'));
+    </script>
+</body>
+
+</html>
